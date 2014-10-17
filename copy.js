@@ -1,10 +1,11 @@
 module.exports = {
-    develop: {
-        files: [{
-            expand: true,
-            cwd: "dist/",
-            src: "myapp.js",
-            dest: "app/js/"
-        }]
-    }
+  case1: {
+    src: 'from/*.js',
+    dest: 'to/'
+  },
+  case2: {
+    files: [
+      { expand: true, cwd: "from/", src: "app.js", dest: "to/" }
+    ]
+  }
 };
